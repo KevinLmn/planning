@@ -6,13 +6,19 @@ services:
     build:
       context: ./front
       dockerfile: Dockerfile
+    volumes:
+      - ./front:/app
+      - /front/node_modules
     ports:
-      - 3000:3000
+      - 5000:5000
 
   backend:
     image: backend_image:latest
     build:
       context: ./back
       dockerfile: Dockerfile
+    volumes:
+      - ./back:/app
+      -  /back/node_modules
     ports:
-      - 5000:5000
+      - 3000:3000
