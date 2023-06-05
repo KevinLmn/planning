@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import { useState } from "react";
+>>>>>>> dev
 
 const Board = () => {
   const [isChecked, setIsChecked] = useState<(boolean | undefined)[][]>([]);
