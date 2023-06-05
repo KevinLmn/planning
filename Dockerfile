@@ -1,11 +1,11 @@
-FROM node:latest as frontend
+# FROM node:latest as frontend
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY ./front /app/
+# COPY ./front /app/
 
-RUN npm install
-RUN npm run build
+# RUN npm install
+# RUN npm run build
 
 FROM node:latest as backend
 
@@ -15,10 +15,12 @@ COPY ./back /app
 
 RUN npm install
 
-FROM node:latest
-WORKDIR /app
+RUN npm install -g nodemon
 
 EXPOSE 3000
 
-# CMD ["node", "./back/app.ts"]
-CMD ["npm","start"]
+CMD ["nodemon", "./app.js"]
+
+
+
+# CMD ["npm","start"]
