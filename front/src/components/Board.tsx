@@ -1,23 +1,22 @@
 import { useState } from "react";
 
-
 const Board = () => {
   const [isChecked, setIsChecked] = useState<(boolean | undefined)[][]>([]);
   const boardX = [
     "Jour",
-    "Tache 1",
+    "eeeeeee 1",
     "Tache 2",
-    "Tache 3",
-    "Tache 4",
-    "Tache 5",
+    "Tache ee3",
+    "TachZZeeee 4",
+    "Tache eeee5",
     "Tache 6",
     "Tache 7",
-    "Tache 8",
+    "Tache eeezz8",
   ];
   const boardY = [
     "Tache",
     "Lundi",
-    "Mardi",
+    "Maerdi",
     "Mercredi",
     "Jeudi",
     "Vendredi",

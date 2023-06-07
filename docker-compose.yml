@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   frontend:
@@ -7,10 +7,14 @@ services:
       context: ./front
       dockerfile: Dockerfile
     volumes:
-      - ./front:/app
-      - /front/node_modules
+      - ./front:/app/
+      - /app/node_modules
     ports:
       - 5000:5000
+    environment:
+      - WDS_SOCKET_HOST=127.0.0.1
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
 
   backend:
     image: backend_image:latest
@@ -19,6 +23,10 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./back:/app
-      -  /back/node_modules
+      - /app/node_modules
     ports:
       - 3000:3000
+    environment:
+      - WDS_SOCKET_HOST=127.0.0.1
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
