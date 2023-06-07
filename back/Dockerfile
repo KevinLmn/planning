@@ -1,17 +1,8 @@
-# FROM node:latest as frontend
-
-# WORKDIR /app
-
-# COPY ./front /app/
-
-# RUN npm install
-# RUN npm run build
-
 FROM node:latest as backend
 
 WORKDIR /app
 
-COPY ./back /app
+COPY . /app
 
 RUN npm install
 
