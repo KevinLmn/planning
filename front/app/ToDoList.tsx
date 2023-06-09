@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ToDoList = () => {
   return (
@@ -22,10 +22,10 @@ const ToDoList = () => {
           debloquer plus ?
         </li>
       </ul>
-      <Link to="/">
+      <Link href="/">
         <button> Back to main page </button>
       </Link>
-      <Link to="/Contact">
+      <Link href="/Contact">
         <button> Contact </button>
       </Link>
     </div>

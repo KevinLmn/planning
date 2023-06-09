@@ -1,6 +1,8 @@
+"use client";
+
 import { useState } from "react";
-import Board from "../components/Board";
-import { Link } from "react-router-dom";
+import Board from "../../components/Board";
+import Link from "next/link";
 
 const Looby = () => {
   const [count, setCount] = useState(0);
@@ -41,11 +43,14 @@ const Looby = () => {
         {count}
       </button>
       <div>{hello ? <p>Hello</p> : <p>Not Hello</p>}</div>
-      <Link to="/ToDoList">
+      <Link href="/ToDoList">
         <button> To Do List </button>
       </Link>
-      <Link to="/Contact">
+      <Link href="/Contact">
         <button> Contact </button>
+      </Link>
+      <Link href="/">
+        <button> A </button>
       </Link>
     </div>
   );
