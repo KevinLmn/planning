@@ -4,14 +4,14 @@ const Board = () => {
   const [isChecked, setIsChecked] = useState<(boolean | undefined)[][]>([]);
   const boardX = [
     "Jour",
-    "eeeeeee 1",
+    "Tache 1",
     "Tache 2",
-    "Tache ee3",
-    "TachZZeeee 4",
-    "Tache eeee5",
+    "Tache 3",
+    "Tache 4",
+    "Tache 5",
     "Tache 6",
     "Tache 7",
-    "Tache eeezz8",
+    "Tache 8",
   ];
   const boardY = [
     "Tache",
