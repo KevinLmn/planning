@@ -13,12 +13,12 @@ const ToDoList = () => {
         <li>VPS et deploiement</li>
         <li>Prettier</li>
         <li>Pipeline</li>
-        <li>Achat d'autres design / panier</li>
+        <li>Achat d&apos;autres design / panier</li>
         <li>Sauvegarde des semaines précédentes sur MySQL</li>
-        <li>Possibilité d'accéder a l'historique sans le modifier</li>
+        <li>Possibilité d&apos;accéder a l&apos;historique sans le modifier</li>
         <li>Admin peut supprimer/modifier historique des données</li>
         <li>
-          Faire un jeu de drapeau avec un nombre limité, possibilité d'en
+          Faire un jeu de drapeau avec un nombre limité, possibilité d&apos;en
           debloquer plus ?
         </li>
       </ul>

@@ -33,7 +33,6 @@ const Board = () => {
       } else if (j === 0) {
         board.push(<span className="tasksAndDays">{boardY[i]}</span>);
       } else {
-        console.log(isChecked);
         const isCellChecked = isChecked[i] && isChecked[i][j];
         const toggleCellChecked = () => {
           const updatedChecked: (boolean | undefined)[][] = [...isChecked];

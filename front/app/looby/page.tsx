@@ -43,10 +43,10 @@ const Looby = () => {
         {count}
       </button>
       <div>{hello ? <p>Hello</p> : <p>Not Hello</p>}</div>
-      <Link href="/ToDoList">
+      <Link href="/todolist">
         <button> To Do List </button>
       </Link>
-      <Link href="/Contact">
+      <Link href="/contact">
         <button> Contact </button>
       </Link>
       <Link href="/">

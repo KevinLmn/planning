@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import Link from "next/link";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +11,7 @@ const Login = () => {
   };
   return (
     <div>
-      <Link to="/">
+      <Link href="/">
         <button> Back to Looby </button>
       </Link>
       <button type="button" onClick={getData}>
