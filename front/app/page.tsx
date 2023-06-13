@@ -13,20 +13,13 @@ const Login = () => {
   };
   return (
     <div>
-      <Link href="/looby">
-        <button> Back to Looby </button>
-      </Link>
       <button type="button" onClick={getData}>
         fetch
       </button>
       <button type="button" onClick={() => console.log(email)}>
         log
       </button>
-      <p>hello</p>
-      <form>
-        <input type="email" placeholder="ID" name="email" />
-        <input type="password" placeholder="Password" name="email" />
-      </form>
+      {email ? <p>{email}</p> : <p>hello</p>}
     </div>
   );
 };

@@ -22,12 +22,6 @@ const ToDoList = () => {
           debloquer plus ?
         </li>
       </ul>
-      <Link href="/">
-        <button> Back to main page </button>
-      </Link>
-      <Link href="/Contact">
-        <button> Contact </button>
-      </Link>
     </div>
   );
 };
