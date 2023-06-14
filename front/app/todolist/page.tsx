@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ToDoList = () => {
+const todolist = () => {
   return (
     <div>
       <ul>
@@ -26,4 +26,4 @@ const ToDoList = () => {
   );
 };
 
-export default ToDoList;
+export default todolist;
